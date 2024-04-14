@@ -676,7 +676,10 @@ footer {
 			'main-2 main-2 main-2 main-2'
 			'main-4 main-4 main-4 main-4';
 	}
-
+	.card {
+		width: 35vw;
+		margin: 3em auto;
+	}
 	#main-2 article {
 		padding: 2em 10em;
 	}
