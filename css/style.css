@@ -93,9 +93,10 @@ nav li:hover {
 }
 
 header {
-	background-image: url('../images/desktop-wallpaper-1920x1200-nier-automata-video-game-widescreen-automata.jpg');
+	background-image: url('../images/oij7ccptssyphsyupixw/benz-vintage_qmdn0x/benz-vintage_qmdn0x_c_scale\,w_1400.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: -160px 0px;
 	height: 60vh;
 	width: 100%;
 }
@@ -180,6 +181,7 @@ main {
 .card:hover {
 	scale: 1.1;
 	transition: ease 400ms;
+	box-shadow: 0px 0px 6px 6px gray;
 }
 
 .card-img {
@@ -189,7 +191,7 @@ main {
 }
 
 .card-1 {
-	background-image: url('../images/1123013.jpg');
+	background-image: url('../images/ultoqgfl9d01w6eaaddg/BMW_E31_oqhexx/BMW_E31_oqhexx_c_scale\,w_1400.jpg');
 }
 
 .card-body {
@@ -198,7 +200,7 @@ main {
 }
 
 .card-2 {
-	background-image: url('../images/499338.jpg');
+	background-image: url('../images/admaumugqkm1e474wgos/BMW_E12_ax66zy/BMW_E12_ax66zy_c_scale\,w_1400.jpg');
 }
 
 article {
@@ -217,12 +219,13 @@ p {
 
 #more-cars {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
 	grid-template-areas:
-		'img1 img2'
-		'img3 img4';
-	width: 100%;
+		'img1'
+		'img2'
+		'img3'
+		'img4';
 }
 
 #main-4 h2 {
@@ -230,7 +233,7 @@ p {
 }
 
 #more-cars .more-img img {
-	width: 45vw;
+	width: 80vw;
 	margin: 0.6em;
 	border-radius: 20px;
 }
@@ -338,7 +341,7 @@ footer {
 	grid-template-columns: 100px 1fr 1fr 100px;
 }
 
-#about-container>* {
+#about-container > * {
 	margin-top: 20px;
 }
 
@@ -415,7 +418,7 @@ footer {
 	grid-template-columns: 100px 1fr 1fr 100px;
 }
 
-#detail-container>div {
+#detail-container > div {
 	margin-top: 40px;
 }
 
@@ -450,9 +453,8 @@ footer {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-areas:
-		"h2 h2 h2"
-		"spec1 spec2 spec3"
-	;
+		'h2 h2 h2'
+		'spec1 spec2 spec3';
 }
 
 #detail-2 h2 {
@@ -482,9 +484,8 @@ footer {
 	gap: 20px;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-areas:
-		"title title title"
-		"car1 car2 car3"
-	;
+		'title title title'
+		'car1 car2 car3';
 }
 
 #detail-3 img {
@@ -560,7 +561,6 @@ footer {
 	#detail-3 {
 		grid-column: 2 / span 1;
 	}
-
 }
 
 /*Mobile screen*/
@@ -615,27 +615,25 @@ footer {
 		grid-template-columns: 1fr 1fr;
 		row-gap: 20px;
 		grid-template-areas:
-			"h2 h2"
-			"spec1 spec2"
-			"spec3 spec3";
+			'h2 h2'
+			'spec1 spec2'
+			'spec3 spec3';
 	}
 
 	#detail-3 {
 		grid-column: 2 / span 1;
 		grid-template-columns: 1fr;
 		grid-template-areas:
-			"title"
-			"car1"
-			"car2"
-			"car3"
-		;
+			'title'
+			'car1'
+			'car2'
+			'car3';
 	}
 
 	#spec3 {
 		justify-self: center;
 	}
 }
-
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 600px) {
@@ -644,6 +642,9 @@ footer {
 		left: 25%;
 	}
 
+	header {
+		background-position: 0;
+	}
 	#main-0 img {
 		height: 20em;
 	}
@@ -688,6 +689,11 @@ footer {
 		text-align: center;
 	}
 
+	#more-cars {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
 	#more-cars .more-img img {
 		width: 40em;
 	}
@@ -704,6 +710,4 @@ footer {
 		border-radius: 20px;
 		border: none;
 	}
-
-
 }
