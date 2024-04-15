@@ -649,7 +649,13 @@ footer {
 	#main-0 img {
 		height: 20em;
 	}
-
+	#more-cars {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	#more-cars .more-img img {
+		width: 40vw;
+	}
 	#more-cars .more-img img:hover {
 		scale: 1.2;
 	}
