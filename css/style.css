@@ -59,7 +59,7 @@ button {
 
 button:hover {
 	cursor: pointer;
-	scale: 1.2;
+	transform: scale(1.2);
 	transition: ease-in-out 300ms;
 	background-color: goldenrod;
 	color: white;
@@ -87,7 +87,7 @@ h1 {
 
 nav li:hover {
 	background-color: goldenrod;
-	scale: 1.2;
+	transform: scale(1.2);
 	transition: ease 400ms;
 	padding: 0.3em;
 }
@@ -109,9 +109,6 @@ header {
 }
 
 .banner-content {
-	/* display: flex;
-	flex-direction: column;
-	justify-content: center; */
 	align-items: center;
 	height: calc(100vh - 83%);
 	position: absolute;
@@ -179,7 +176,7 @@ main {
 }
 
 .card:hover {
-	scale: 1.1;
+	transform: scale(1.1);
 	transition: ease 400ms;
 	box-shadow: 0px 0px 6px 6px gray;
 }
@@ -244,8 +241,7 @@ p {
 }
 
 #more-cars .more-img img:hover {
-	scale: 1.5;
-	transform: rotate(360deg);
+	transform: rotate(360deg) scale(1.5);
 	transition: ease 500ms;
 }
 
@@ -276,7 +272,7 @@ footer {
 }
 
 .footer form button:hover {
-	scale: 1.05;
+	transform: scale(1.05);
 }
 
 .icons img:hover {
@@ -657,7 +653,7 @@ footer {
 		width: 40vw;
 	}
 	#more-cars .more-img img:hover {
-		scale: 1.2;
+		transform: scale(1.2);
 	}
 }
 
@@ -709,7 +705,7 @@ footer {
 	}
 
 	#more-cars .more-img img:hover {
-		scale: 1.2;
+		transform: scale(1.2);
 	}
 
 	footer {
